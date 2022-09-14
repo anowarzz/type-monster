@@ -67,7 +67,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 25rem;
-  width: 25rem;
+  max-width: 25rem;
   background-color: #171717;
   border-radius: 15px;
   border: 2px solid #9dffad;
@@ -85,13 +85,15 @@ body {
   color: #9dffad;
 }
 .red {
-  color: #eb6565;
+  /* color: #eb6565; */
+  color:red;
 }
 .bold {
   font-weight: 700;
+
 }
-.bold-seconds{
-  color:aqua;
+.seconds{
+  color: aqua;
 }
 .inactive {
   border: 2px solid white !important;
