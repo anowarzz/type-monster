@@ -8,7 +8,7 @@ const modalBackground = document.getElementById("modal-background");
 // variables
 let userText = "";
 let errorCount = 0;
-let startTime;
+let  startTime;
 let questionText = "";
 
 // Load and display question
@@ -82,7 +82,8 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+
+    <button style="margin-top:10rem" onclick="closeModal()">Close</button>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
