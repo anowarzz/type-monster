@@ -90,6 +90,9 @@ body {
 .bold {
   font-weight: 700;
 }
+.bold-seconds{
+  color:aqua;
+}
 .inactive {
   border: 2px solid white !important;
 }
