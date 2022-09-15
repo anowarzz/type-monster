@@ -24,7 +24,7 @@
 <!-- Main Section Starts -->
   <main class="mt-5">
 
-    <!-- Question 1. -->
+    <!-- Question No. 1 -->
     <section class="text-dark p-3 rounded container mb-5 bg-info">
         <h2 class="mb-2">1. What are the differences between Local Storage and Session Storage  ??</h2>
         <p class="fs-5 mb-5"> The differences between Local Storage and Session Storage are mentioned bellow  <i class="fa-solid fa-circle-down ps-2"></i> </p>
@@ -38,7 +38,7 @@
                 <i class="fa-solid fa-database"></i> Local Storage 
             </h3>
             <ol class="fs-5">
-                <li class="pb-1">Data in local storage does not expires automatically. </li>
+                <li class="pb-1">Data in local storage does not expires automatically. It has to be done manually. </li>
                 <li class="pb-1">The Storage Capacity in Local Storage is 5 / 10 MB.</li>
                 <li class="pb-1">There is no transfer of data to the server.</li>
                 <li class="pb-1">The client can only read local storage data.</li>
@@ -48,7 +48,7 @@
         <div class="w-50">
             <h3 class="text-center"><i class="fa-solid fa-database"></i> Session Storage</h3>
         <ol class="fs-5">
-            <li class="pb-1">Data in session storage expires after the end of session.</li>
+            <li class="pb-1">Data in session storage expires after the end of session. like  (closing the browser) </li>
             <li class="pb-1">The Storage Capacity in Session Storage is 5 MB.</li>
             <li class="pb-1">There is no transfer of data to the server.</li>
             <li class="pb-1">The client can only read local storage data.</li>
@@ -75,18 +75,21 @@
             </h3>
             <ol class="fs-5">
                 <li class="pb-2">The variables defined outside of any <code>function</code> or curly brackets <code>{ }</code> are known as global variables and The scope the have is called global scope </li>
-                <li class="pb-1"> Variables that are declared in global scope can be accessed from anywhere in JavaScript Code</li>
-                <li class="pb-1">If we declare variable with <code>var</code> from anywhere of the code it goes to global Scope.
+                <li class="pb-2"> Variables that are declared in global scope can be accessed from anywhere in JavaScript Code</li>
+                <li class="pb-4">If we declare variable with <code>var</code> from anywhere of the code it goes to global Scope. </li>
+                <li>The area outside of any <code>function</code> and curly braces <code>{ } </code> is global scope in JavaScript.</li>
+               
         </div>
 
         <!-- Block Scope -->
         <div class="w-50">
             <h3 class="text-center"> <i class="fa-solid fa-layer-group"></i> Block Scope</h3>
         <ol class="fs-5">
-            <li class="pb-4">Generally, whenever we use curly brackets <code>{ }</code> in code it creates a block and variables inside the block are in block scope.</li>
+            <li class="pb-3">Generally, whenever we use curly brackets <code>{ }</code> in code it creates a block and variables inside the block are in block scope.</li>
          
-            <li class="pb-4">Variable that are declared inside a block scope can only be accessed inside that block</li>
-            <li>ES6 provides the <code>let</code> and <code>const</code> keywords that allow us to declare variables in block scope.</li>
+            <li class="pb-3">Variable that are declared inside a block scope can only be accessed inside that block</li>
+            <li class="pb-2">ES6 provides the <code>let</code> and <code>const</code> keywords that allow us to declare variables in block scope.</li>
+            <li> The area within the <code>if, else, switch ,conditions</code> or <code>for, do while, and while loops</code> is block scope.</li>
         </ol>
     </div>
       </div>
@@ -96,13 +99,26 @@
 
 
 
-    <!-- Question 3.  -->
-    <section>
+    <!-- Question No. 3  -->
         
 <section class="text-dark p-3 rounded container mb-5 bg-info">
-    <h2 class="mb-2"> 3. How Does Event Loop Works In JavaScript  ??</h2>    
+    <h2 class="mb-3"> 3. How Does Event Loop Works In JavaScript  ??</h2> 
+
+    <h3 class="text-center mb-4"> Event Loop <i class="fa-solid fa-arrows-spin"></i></h3>
+
+    <p class="fs-5">The <strong>Event loop</strong> is the secret behind JavaScript's asynchronous programming.</p>
+    <p class="fs-5"> Event Loop does an important job . It monitors the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
+        Such an iteration is called a tick in the Event Loop. Each event is just a function callback.</p>
+
 </section>
-    </section>
+<hr class="py-3 text-white container mb-5">
+
+
+<!-- Question No. 4 -->
+<section class="text-dark p-3 rounded container mb-5 bg-info">
+
+    <h2></h2>
+</section>
 
   </main>
 
