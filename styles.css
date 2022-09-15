@@ -84,6 +84,9 @@ body {
 .green {
   color: #9dffad;
 }
+.aqua{
+  color:aqua;
+}
 .red {
   color: red;
 }
@@ -190,15 +193,16 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+
+
+
+/* Mobile Device Responsive  */
+@media only screen and (max-width: 768px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
   }
-  /* .card {
-    flex-direction: column;
-    width: 100%;
-  } */
+
   #histories {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -208,16 +212,12 @@ button {
 
 }
 
-/* For Tablet device */
-@media only screen and (min-width: 701px) and (max-width: 991px) {
+/* Responsive For Tablet device */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
   }
-  /* .card { */
-    /* flex-direction: column; */
-    /* width: 100%; */
-  /* } */
   #histories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
