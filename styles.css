@@ -147,13 +147,6 @@ button {
   cursor: pointer;
 }
 
-/* #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border: 4px solid aqua;
-  padding: 10px;
-} */
 
 #histories {
   display: grid;
@@ -197,7 +190,7 @@ button {
 
 
 /* Mobile Device Responsive  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
@@ -213,7 +206,7 @@ button {
 }
 
 /* Responsive For Tablet device */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
