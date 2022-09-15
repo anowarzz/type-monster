@@ -62,6 +62,7 @@ const validate = (key) => {
   return false;
 };
 
+
 // FINISHED TYPING
 const gameOver = () => {
   document.removeEventListener("keydown", typeController);
@@ -81,7 +82,7 @@ const gameOver = () => {
   // show result
   resultModal.innerHTML += `
     <h1 style="padding-bottom:3rem">Finished!</h1>
-    <p>You took: <span class="bold seconds">${parseInt(timeTaken)}</span> seconds</p>
+    <p>You took : <span class="bold seconds">${parseInt(timeTaken)}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
 
     <button style="margin-top:10rem" onclick="closeModal()">Close</button>
@@ -136,6 +137,5 @@ setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
 
-  
   document.getElementById("show-time").innerHTML = `${startTime ? parseInt(timeSpent) : 0} seconds`;
 }, 1000);
