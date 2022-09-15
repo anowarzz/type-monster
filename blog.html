@@ -58,45 +58,50 @@
     </section>
     <hr class="py-3 text-white container mb-5">
 
+
     <!-- Question No. 2 -->
 
-<!-- <section class="text-white container mb-5">
-    <h2 class="mb-2"> <span class="text-info">1.</span> What are the differences between Local Storage and Session Storage  ??</h2>    
-</section> -->
-
-    
-
     <section class="text-dark p-3 rounded container mb-5 bg-info">
-        <h2 class="mb-2"> <span class="text-danger">1.</span> What are the differences between Global Scope and Block scope in JavaScript ??</h2>
+        <h2 class="mb-2"> 2. What are the differences between Global Scope and Block scope in JavaScript ??</h2>
         <p class="fs-5 mb-5"> The differences between Global Scope and Block scope in JavaScript are :  <i class="fa-solid fa-circle-down ps-2"></i> </p>
 
       <div class="d-flex justify-content-between">
        
 
-        <!-- Local Storage -->
+        <!-- Global scope -->
         <div class="w-50">
             <h3 class="text-center">
-                <i class="fa-solid fa-database"></i> Local Storage 
+                <i class="fa-solid fa-layer-group"></i> Global Scope 
             </h3>
             <ol class="fs-5">
-                <li class="pb-1">Data in local storage does not expires automatically. </li>
-                <li class="pb-1">The Storage Capacity in Local Storage is 5 / 10 MB</li>
-                <li class="pb-1">There is no transfer of data to the server</li>
-                <li class="pb-1">The client can only read local storage data</li>
-            </ol>
+                <li class="pb-2">The variables defined outside of any <code>function</code> or curly brackets <code>{ }</code> are known as global variables and The scope the have is called global scope </li>
+                <li class="pb-1"> Variables that are declared in global scope can be accessed from anywhere in JavaScript Code</li>
+                <li class="pb-1">If we declare variable with <code>var</code> from anywhere of the code it goes to global Scope.
         </div>
-        <!-- Session Storage -->
+
+        <!-- Block Scope -->
         <div class="w-50">
-            <h3 class="text-center"><i class="fa-solid fa-database"></i> Session Storage</h3>
+            <h3 class="text-center"> <i class="fa-solid fa-layer-group"></i> Block Scope</h3>
         <ol class="fs-5">
-            <li class="pb-1">Data in session storage expires after the end of session.</li>
-            <li class="pb-1">The Storage Capacity in Session Storage is 5 MB</li>
-            <li class="pb-1">There is no transfer of data to the server</li>
-            <li class="pb-1">The client can only read local storage data</li>
+            <li class="pb-4">Generally, whenever we use curly brackets <code>{ }</code> in code it creates a block and variables inside the block are in block scope.</li>
+         
+            <li class="pb-4">Variable that are declared inside a block scope can only be accessed inside that block</li>
+            <li>ES6 provides the <code>let</code> and <code>const</code> keywords that allow us to declare variables in block scope.</li>
         </ol>
     </div>
       </div>
-      <hr>
+    </section>
+    <hr class="py-3 text-white container mb-5">
+
+
+
+
+    <!-- Question 3.  -->
+    <section>
+        
+<section class="text-dark p-3 rounded container mb-5 bg-info">
+    <h2 class="mb-2"> 3. How Does Event Loop Works In JavaScript  ??</h2>    
+</section>
     </section>
 
   </main>
