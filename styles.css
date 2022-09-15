@@ -148,6 +148,15 @@ button {
   cursor: pointer;
 }
 
+#clear-btn-div{
+  text-align: center;
+  margin-top: 2rem;
+
+}
+#clear-btn{
+  background-color: #3d703d;
+
+}
 
 #histories {
   display: grid;
