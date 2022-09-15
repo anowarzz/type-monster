@@ -39,9 +39,10 @@
             </h3>
             <ol class="fs-5">
                 <li class="pb-1">Data in local storage does not expires automatically. It has to be done manually. </li>
-                <li class="pb-1">The Storage Capacity in Local Storage is 5 / 10 MB.</li>
+                <li class="pb-1">The Storage Capacity in Local Storage is about 10 MB.</li>
                 <li class="pb-1">There is no transfer of data to the server.</li>
                 <li class="pb-1">The client can only read local storage data.</li>
+                <li>Its data is never transferred to the server</li>
             </ol>
         </div>
         <!-- Session Storage -->
@@ -52,6 +53,7 @@
             <li class="pb-1">The Storage Capacity in Session Storage is 5 MB.</li>
             <li class="pb-1">There is no transfer of data to the server.</li>
             <li class="pb-1">The client can only read local storage data.</li>
+            <li>Its data is never transferred to the server</li>
         </ol>
     </div>
       </div>
@@ -104,7 +106,7 @@
 <section class="text-dark p-3 rounded container mb-5 bg-info">
     <h2 class="mb-3"> 3. How Does Event Loop Works In JavaScript  ??</h2> 
 
-    <h3 class="text-center mb-4"> Event Loop <i class="fa-solid fa-arrows-spin"></i></h3>
+    <h4 class="text-center mb-4"> Event Loop <i class="fa-solid fa-arrows-spin"></i></h4>
 
     <p class="fs-5">The <strong>Event loop</strong> is the secret behind JavaScript's asynchronous programming.</p>
     <p class="fs-5"> Event Loop does an important job . It monitors the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
@@ -117,8 +119,22 @@
 <!-- Question No. 4 -->
 <section class="text-dark p-3 rounded container mb-5 bg-info">
 
-    <h2></h2>
+    <h2 class="mb-3">4. How many Ways To Get Undefined In JavaScript ?? </h2>
+    <p class="fs-5 fw-semibold">We might get Undefined in JavaScript for the following <span class="text-danger">8</span> reasons : <i class="fa-solid fa-circle-down ps-2"></i></p>
+
+    <ol class="fs-5 ">
+       <li> Variable that is not initialized will give undefined.</li>
+        <li>Function with no return will give undefined when it is called.</li>
+         <li> If Parameter is not  passed to a function when if is  necessary will give undefined.</li>
+         <li>If return has nothing on the right side will return undefined.</li>
+         <li>Trying to access a Property that does not exist inside a object will give undefined.</li>
+       <li>Accessing array elements outside of the index range will give undefined</li>
+        <li>After Deleting an element inside of array if we try to access it , we get undefined.</li>
+        <li> If we Set a value directly to undefined . We will get undefined.</li>
+    </ol>
 </section>
+
+<hr class="py-3 text-white container mb-5">
 
   </main>
 
