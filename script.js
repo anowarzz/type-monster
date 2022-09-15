@@ -143,4 +143,5 @@ setInterval(() => {
 const clearHistory = () =>{
   histories.innerHTML = '';
   localStorage.clear();
+  window.location.reload();
 }
