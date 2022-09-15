@@ -12,7 +12,7 @@ body {
 }
 
 .box-container {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 #result {
   position: fixed;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 25rem;
@@ -75,7 +75,7 @@ body {
   text-align: center;
   padding: 2rem;
 }
-#show-time{
+#show-time {
   text-align: center;
   color: white;
   margin: 10px 0;
@@ -85,14 +85,12 @@ body {
   color: #9dffad;
 }
 .red {
-  /* color: #eb6565; */
-  color:red;
+  color: red;
 }
 .bold {
   font-weight: 700;
-
 }
-.seconds{
+.seconds {
   color: aqua;
 }
 .inactive {
@@ -146,17 +144,23 @@ button {
   cursor: pointer;
 }
 
-#histories {
+/* #histories {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
+  border: 4px solid aqua;
+  padding: 10px;
+} */
 
+#histories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
 .card {
   width: 100%;
   height: 100%;
   padding: 50px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -191,7 +195,33 @@ button {
     padding: 0 20px;
     width: 100%;
   }
-  .card {
+  /* .card {
     flex-direction: column;
+    width: 100%;
+  } */
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
   }
+
+
+}
+
+/* For Tablet device */
+@media only screen and (min-width: 701px) and (max-width: 991px) {
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
+  /* .card { */
+    /* flex-direction: column; */
+    /* width: 100%; */
+  /* } */
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
 }
